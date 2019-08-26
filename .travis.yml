@@ -1,0 +1,16 @@
+language: node_js
+node_js: '10'
+cache: yarn
+script:
+- yarn ci
+deploy:
+  provider: npm
+  skip_cleanup: true
+  email: rishabhsrao@gmail.com
+  on:
+    tags: true
+  api_key:
+    # Secure token generated and added using:
+    #     $ travis encrypt --com {{raw NPM token}} --add 'deploy.api_key'
+    # See https://docs.travis-ci.com/user/deployment/npm/#npm-auth-token
+    secure: WnUtTW44A9vmwnKnl5oZzjNQVop1QtabeJh5IkV4FawUhb5UBSuAQEzyyEwd7yFKMviX0JyX9EYYGYhTrj14wJydN/q4PrcclfczNtjHpD9AvBi9qaxVFHMBN6/zchUGJL8R9CuzQuY+wCb0gzNeMKogEh+fJVrafw5iKWsFN6vp8Y2sSyl7D8F1EsCGmomzuqWhy4lNxT6jIitBHmB99DbYRbCxjAFb5cZshhWn3gKYBMqUWQl2Fv0bg0fupUZ5MF0lWgq4eZaAffde2NRGkY44NeEUlK/PqqQ3G2W9Al2oVw+jwCl8mCwPczoAeQiy39L6ZUu+3dNKRM0OHh8zLx/+xqjpn3nWPCegXZfuhbeQ5njmCMA9+QcS8LdoFJqRJQNzXbn6n83nh03EnpX99javsACDQcvh6chPFNzYwsC+Zv9Cjs5rZbXocXYAjXPu0agWJ3raTFOfgF0xcFmivbooVvqna7WPk7/GaGOppE22xwoNkbh+xhWAtxLLnI5cOtDxpZng+RaVxSAqKYCVklM+oFqhSaW7geHUqYGi8/6wnahDEvTeA1e3K96JxygJKlsZAMe2CdQbpY8jmpkKt/XPF/RWA+XZQhvraZxps4xAEYM1UwSzXNPJz591z3IXasRhFW4jDR+P3A9qnpp17aK3YrrcqNfFpL/RAqOW9N8=
