@@ -1,7 +1,7 @@
 {
   "name": "@magica11y/prefers-reduced-transparency",
   "homepage": "https://magica11y.github.io",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Detects user’s transparency preferences using the 'prefers-reduced-transparency' CSS3 level 5 media query.",
   "module": "lib/index.js",
   "browser": "dist/magica11y.prefersReducedTransparency.js",
