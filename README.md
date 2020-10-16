@@ -84,7 +84,7 @@ const reduceTransparency = (transparencyPreference === prefersReducedTransparenc
 … or as an ES module…
 
 ```js
-import prefersReducedTransparency, { transparencyPreferences } from 'magica11y/prefersReducedTransparency';
+import prefersReducedTransparency, { transparencyPreferences } from '@magica11y/prefersReducedTransparency';
 
 const transparencyPreference = prefersReducedTransparency();
 const reduceTransparency = (transparencyPreference === transparencyPreferences.REDUCE);
