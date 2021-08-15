@@ -18,11 +18,11 @@
 
 # :sparkles: Introduction
 
-Quoting from the [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) [level 5](https://drafts.csswg.org/mediaqueries-5)
+Quoting from the [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) [level 5](https://www.w3.org/TR/mediaqueries-5)
 [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries) specfication…
 
-> The [`'prefers-reduced-transparency'`](https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-transparency) media feature
-> indicates whether the content is displayed normally, or whether colors have been inverted.
+> The [`'prefers-reduced-transparency'`](https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-transparency) media feature
+> is used to detect if the user has requested the system minimize the amount of transparent or translucent layer effects it uses.
 
 :high_brightness: **`prefersReducedTransparency()`** is part of :crystal_ball: [**Magica11y**](https://magica11y.github.io),
 which provides a suite of functions to detect “user-preference” and “environment” media features.
@@ -92,9 +92,9 @@ const reduceTransparency = (transparencyPreference === transparencyPreferences.R
 
 The `transparencyPreferences` object contains all the possible values supported by the `'prefers-reduced-transparency'` media query…
 
-* `transparencyPreferences.NO_PREFERENCE` (spec: [`'no-preference'`](https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-transparency-no-preference))
+* `transparencyPreferences.NO_PREFERENCE` (spec: [`'no-preference'`](https://www.w3.org/TR/mediaqueries-5/#valdef-media-prefers-reduced-transparency-no-preference))
   > Indicates that the user has made no preference known to the system.
-* `transparencyPreferences.REDUCE` (spec: [`'dark'`](https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-transparency-reduce))
+* `transparencyPreferences.REDUCE` (spec: [`'reduce'`](https://www.w3.org/TR/mediaqueries-5/#valdef-media-prefers-reduced-transparency-reduce))
   > Indicates that user has notified the system that they prefer an interface that minimizes the amount of transparent or translucent layer effects.
 * `null`
   > The user’s preference could not be determined.
